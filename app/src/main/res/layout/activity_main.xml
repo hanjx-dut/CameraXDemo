@@ -11,4 +11,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <View
+        android:id="@+id/action_area"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#50000000" />
+
+    <ImageView
+        android:id="@+id/take_photo_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/take_photo"
+        app:layout_constraintTop_toTopOf="@id/action_area"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/result_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
